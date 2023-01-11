@@ -1,0 +1,99 @@
+/* import fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital@0;1&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+}
+
+.logo a {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  margin-left: 10px;
+  padding-left: 10px;
+
+}
+
+.nav-bar-items ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar-items li {
+  font-family: 'poppins', sans-serif;
+  font-size: 1.5rem;
+  list-style: none;
+  padding: 1rem;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav-bar-items li:hover {
+  background-color: #E8BC7C;
+  transition: 0.3s;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav-bar-items {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-bar-items ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav-bar-items li {
+    text-align: center;
+  }
+
+  .nav-bar-items li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-bar-items.active {
+    display: flex;
+  }
+}

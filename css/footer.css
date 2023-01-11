@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  margin-top: 40px;
+  text-align: center;
+  height: 150px;
+  width: 50%;
+}
+
+.copyright {
+  background-color: #E8BC7C;
+  display: flex;
+  margin-bottom: 100px;
+  height: 77px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
