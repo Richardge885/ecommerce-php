@@ -1,5 +1,5 @@
 <?php
-
+// new line
 define("dns", "mysql:host=localhost;dbname=test"); // database name
 define("username", "user"); // Username
 define("password", "123"); // Password
