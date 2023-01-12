@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -30,12 +32,22 @@
 
             <div class="nav-bar-items">
                 <ul>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Sales</a></li>
+                    <li><a href="shop.php">Shop</a></li>
+                    <li><a href="sales.php">Sales</a></li>
                     <li><a href="about.php">About</a></li>
-                    <li><a href="#">Cart</a></li>
-                    <li><a href="#">Sign Up</a></li>
+
+                    <?php if (isset($_SESSION['username'])) : ?>
+                    <li><a href="cart.php">Cart</a></li>
+                    <?php endif; ?>
+
+                    <?php if (!isset($_SESSION['username'])) : ?>
+                    <li><a href="signup.php">Sign Up</a></li>
                     <li><a href="login.php">Login</a></li>
+                    <?php endif; ?>
+
+                    <?php if (isset($_SESSION['username'])) : ?>
+                    <li><a href="logoff.php">logoff</a></li>
+                    <?php endif; ?>
                 </ul>
             </div>
         </div>
