@@ -1,5 +1,5 @@
 <?php include 'inc/header.php'; ?>
-<!-- new line -->
+
 <link rel="stylesheet" href="css/index.css" />
 <!--  Homepage Contents    -->
 <div class="container">

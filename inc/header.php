@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -17,7 +16,6 @@
 </head>
 
 <body>
-    <?php include "database.php"; ?>
     <!-- nav bar  -->
     <header>
         <div class="navbar">
@@ -37,7 +35,7 @@
                     <li><a href="about.php">About</a></li>
                     <li><a href="#">Cart</a></li>
                     <li><a href="#">Sign Up</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li><a href="login.php">Login</a></li>
                 </ul>
             </div>
         </div>

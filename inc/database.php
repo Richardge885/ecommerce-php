@@ -1,20 +1,34 @@
 <?php
-// new line
-define("dns", "mysql:host=localhost;dbname=test"); // database name
-define("username", "user"); // Username
-define("password", "123"); // Password
+// Database connection info 
+define("dns", "mysql:host=localhost;dbname=test"); // host and database name
+define("username", "user"); // database username change value for your needs
+define("password", "123"); // database password change value for your needs
 
-$query = "SELECT * FROM `login_table` WHERE 1;";
+$db = new PDO(dns, username, password);
 
-try {
-    $db = new PDO(dns, username, password);
+function userLogin($db, $username, $password)
+{
+    // SQL syntax query for search login table
+    $query = "SELECT * FROM `login_table`;";
 
-    //prepare statement
+    // Prepare query statement
     $statement = $db->prepare($query);
 
-    //Execute query
+    // $statement->bindValue(':username', $username, PDO::PARAM_STR);
+    // $statement->bindValue(':password', $password, PDO::PARAM_STR);
+
+    // Execute query statement
     $statement->execute();
-} catch (Exception $e) {
-    $error_message = $e->getMessage();
-    echo "<p>Error Message: $error_message</p>";
+    while ($userInfo = $statement->fetch()) {
+        if ($userInfo['USERNAME'] == $username) {
+            if ($userInfo['PASSWORD'] == $password) {
+                echo "hello there";
+            } else {
+                echo "wrong info";
+            }
+        }
+    }
+
+    // close database connection
+    $statement->closeCursor();
 }
