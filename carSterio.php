@@ -16,7 +16,7 @@ $result = getCarSterioItems($db);
                     £
                     <?php echo $result['cost']; ?>
                     /
-                    <input type="submit" value="Add" class="btn">
+                    <input type="submit" value="Add" id="button">
                 </div>
             </form>
         </div>

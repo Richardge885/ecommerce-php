@@ -6,14 +6,16 @@
 }
 
 .footer-content {
-  margin-top: 40px;
+  margin-top: 150px;
   text-align: center;
-  height: 150px;
+  height: 65px;
   width: 50%;
+  font-family: "poppins", sans-serif;
 }
 
 .copyright {
-  background-color: #E8BC7C;
+  font-family: "poppins", sans-serif;
+  background-color: #e8bc7c;
   display: flex;
   margin-bottom: 100px;
   height: 77px;

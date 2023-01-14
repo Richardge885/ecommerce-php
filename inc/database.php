@@ -93,3 +93,14 @@ function getSalesSterioItems($db)
     $statement->closeCursor();
     return $result;
 }
+
+// Get Items on Sales for home page
+function getCartItems($db, $username)
+{
+    $query = "SELECT * FROM `" . $username . "`;";
+    $statement = $db->prepare($query);
+    $statement->execute();
+    $result = $statement->fetchAll();
+    $statement->closeCursor();
+    return $result;
+}

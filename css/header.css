@@ -1,5 +1,5 @@
 /* import fonts from google fonts */
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital@0;1&display=swap");
 
 body {
   margin: 0;
@@ -20,11 +20,10 @@ a {
 }
 
 .logo a {
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
   font-size: 2rem;
   margin-left: 10px;
   padding-left: 10px;
-
 }
 
 .nav-bar-items ul {
@@ -34,7 +33,7 @@ a {
 }
 
 .nav-bar-items li {
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   font-size: 1.5rem;
   list-style: none;
   padding: 1rem;
@@ -43,7 +42,7 @@ a {
 }
 
 .nav-bar-items li:hover {
-  background-color: #E8BC7C;
+  background-color: #e8bc7c;
   transition: 0.3s;
 }
 

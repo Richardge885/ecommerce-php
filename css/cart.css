@@ -1,0 +1,67 @@
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 400px;
+  border: 3px solid;
+  border-color: #e8bc7c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "poppins", sans-serif;
+  margin-top: 70px;
+}
+
+.cost {
+  padding-top: 84px;
+  font-family: "poppins", sans-serif;
+  font-size: larger;
+}
+
+.delete_btn {
+  color: white;
+  background-color: black;
+  font-size: larger;
+  width: 100px;
+  height: 200px;
+  transition: 0.3s;
+}
+
+.total {
+  margin-top: 70px;
+  width: 400px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-family: "poppins", sans-serif;
+  font-size: xx-large;
+}
+
+.pay_btn {
+  color: white;
+  background-color: black;
+  font-family: "poppins", sans-serif;
+  font-size: xx-large;
+  transition: 0.3s;
+  width: 100px;
+}
+
+.pay_btn:hover {
+  background-color: #e8bc7c;
+  color: black;
+  transition: 0.3s;
+}
+
+.delete_btn:hover {
+  background-color: #e8bc7c;
+  color: black;
+  transition: 0.3s;
+}

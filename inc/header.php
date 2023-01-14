@@ -32,21 +32,35 @@
 
             <div class="nav-bar-items">
                 <ul>
-                    <li><a href="shop.php">Shop</a></li>
-                    <li><a href="sales.php">Sales</a></li>
-                    <li><a href="about.php">About</a></li>
+                    <a href="shop.php">
+                        <li>Shop</li>
+                    </a>
+                    <a href="sales.php">
+                        <li>Sales</li>
+                    </a>
+                    <a href="about.php">
+                        <li>About</li>
+                    </a>
 
                     <?php if (isset($_SESSION['username'])) : ?>
-                    <li><a href="cart.php">Cart</a></li>
+                    <a href="cart.php">
+                        <li>Cart</li>
+                    </a>
                     <?php endif; ?>
 
                     <?php if (!isset($_SESSION['username'])) : ?>
-                    <li><a href="signup.php">Sign Up</a></li>
-                    <li><a href="login.php">Login</a></li>
+                    <a href="signup.php">
+                        <li>Sign Up</li>
+                    </a>
+                    <a href="login.php">
+                        <li>Login</li>
+                    </a>
                     <?php endif; ?>
 
                     <?php if (isset($_SESSION['username'])) : ?>
-                    <li><a href="logoff.php">logoff</a></li>
+                    <a href="logoff.php">
+                        <li>logoff</li>
+                    </a>
                     <?php endif; ?>
                 </ul>
             </div>

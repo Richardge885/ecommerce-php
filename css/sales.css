@@ -30,8 +30,15 @@
   font-size: large;
 }
 
-.btn {
-  width: 100px;
+#button {
   color: white;
   background-color: black;
+  width: 100px;
+  transition: 0.3s;
+}
+
+#button:hover {
+  color: black;
+  background-color: #e8bc7c;
+  transition: 0.3s;
 }
