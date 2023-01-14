@@ -16,9 +16,6 @@ function userLogin($db, $username, $password)
     // Prepare query statement
     $statement = $db->prepare($query);
 
-    // $statement->bindValue(':username', $username, PDO::PARAM_STR);
-    // $statement->bindValue(':password', $password, PDO::PARAM_STR);
-
     // Execute query statement
     $statement->execute();
     while ($userInfo = $statement->fetch()) {
@@ -46,11 +43,53 @@ function signUpNewUser($db, $username, $password)
 
     $statement->bindValue(':username', $username, PDO::PARAM_STR);
     $statement->bindValue(':password', $password, PDO::PARAM_STR);
-
+    createUserCartTable($db, $username);
     if ($statement->execute()) {
         header('Location: login.php');
     } else {
         echo "unable to create new user";
     }
     $statement->closeCursor();
+}
+
+// Create user cart table used in signUpNewUser function
+function createUserCartTable($db, $tableName)
+{
+    $query = "CREATE TABLE" . $tableName . "( ID int );";
+    $statement = $db->prepare($query);
+    $statement->execute();
+    $statement->closeCursor();
+}
+
+// Get Home Sterio Items for home page
+function getHomeSterioItems($db)
+{
+    $query = "SELECT * FROM `home_sterio`;";
+    $statement = $db->prepare($query);
+    $statement->execute();
+    $result = $statement->fetchAll();
+    $statement->closeCursor();
+    return $result;
+}
+
+// Get Car Sterio Items for home page
+function getCarSterioItems($db)
+{
+    $query = "SELECT * FROM `car_sterio`;";
+    $statement = $db->prepare($query);
+    $statement->execute();
+    $result = $statement->fetchAll();
+    $statement->closeCursor();
+    return $result;
+}
+
+// Get Items on Sales for home page
+function getSalesSterioItems($db)
+{
+    $query = "SELECT * FROM `sales`;";
+    $statement = $db->prepare($query);
+    $statement->execute();
+    $result = $statement->fetchAll();
+    $statement->closeCursor();
+    return $result;
 }

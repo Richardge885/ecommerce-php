@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+img {
+  border: 10px solid;
+  border-color: #e8bc7c;
+  width: 500px;
+  height: 500px;
+  transition: 0.3s;
+}
+
+.section {
+  margin-top: 70px;
+  margin-left: 80px;
+  margin-right: 100px;
+  font-family: "poppins", sans-serif;
+  font-size: xx-large;
+}
+
+img:hover {
+  width: 520px;
+  height: 520px;
+  transition: 0.3s;
+}
