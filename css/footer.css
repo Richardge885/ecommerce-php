@@ -1,25 +1,25 @@
 .footer {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .footer-content {
+  font-family: "poppins", sans-serif;
+  height: 65px;
   margin-top: 150px;
   text-align: center;
-  height: 65px;
   width: 50%;
-  font-family: "poppins", sans-serif;
 }
 
 .copyright {
-  font-family: "poppins", sans-serif;
+  align-items: center;
   background-color: #e8bc7c;
   display: flex;
-  margin-bottom: 100px;
+  font-family: "poppins", sans-serif;
   height: 77px;
-  width: 100%;
   justify-content: center;
-  align-items: center;
+  margin-bottom: 100px;
+  width: 100%;
 }

@@ -16,7 +16,7 @@ $result = getHomeSterioItems($db);
                     £
                     <?php echo $result['cost']; ?>
                     /
-                    <input type="submit" value="Add" it="button">
+                    <input type="submit" value="Add" id="button">
                 </div>
             </form>
         </div>

@@ -43,24 +43,24 @@
                     </a>
 
                     <?php if (isset($_SESSION['username'])) : ?>
-                    <a href="cart.php">
-                        <li>Cart</li>
-                    </a>
+                        <a href="cart.php">
+                            <li>Cart</li>
+                        </a>
                     <?php endif; ?>
 
                     <?php if (!isset($_SESSION['username'])) : ?>
-                    <a href="signup.php">
-                        <li>Sign Up</li>
-                    </a>
-                    <a href="login.php">
-                        <li>Login</li>
-                    </a>
+                        <a href="signup.php">
+                            <li>Sign Up</li>
+                        </a>
+                        <a href="login.php">
+                            <li>Login</li>
+                        </a>
                     <?php endif; ?>
 
                     <?php if (isset($_SESSION['username'])) : ?>
-                    <a href="logoff.php">
-                        <li>logoff</li>
-                    </a>
+                        <a href="logoff.php">
+                            <li>logoff</li>
+                        </a>
                     <?php endif; ?>
                 </ul>
             </div>

@@ -1,15 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital@0;1&display=swap");
 
 h1 {
-  /* font-family: "poppins", sans-serif; */
   font-family: "DM Serif Display", serif;
   text-align: center;
 }
 
 form {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   margin-bottom: 100px;
 }
@@ -20,9 +19,9 @@ form {
 }
 
 .submitBtn {
+  background-color: black;
+  color: white;
+  height: 50px;
   margin-left: 100px;
   width: 200px;
-  height: 50px;
-  color: white;
-  background-color: black;
 }

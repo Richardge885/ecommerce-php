@@ -1,53 +1,53 @@
 img {
-  width: 200px;
   height: 200px;
+  width: 200px;
 }
 
 .container {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .card {
-  width: 400px;
-  border: 3px solid;
   border-color: #e8bc7c;
+  border: 3px solid;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   font-family: "poppins", sans-serif;
+  justify-content: space-between;
   margin-top: 70px;
+  width: 400px;
 }
 
 .cost {
-  padding-top: 84px;
   font-family: "poppins", sans-serif;
   font-size: larger;
+  padding-top: 84px;
 }
 
 .delete_btn {
-  color: white;
   background-color: black;
+  color: white;
   font-size: larger;
-  width: 100px;
   height: 200px;
   transition: 0.3s;
+  width: 100px;
 }
 
 .total {
-  margin-top: 70px;
-  width: 400px;
-  display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  display: flex;
   font-family: "poppins", sans-serif;
   font-size: xx-large;
+  justify-content: space-between;
+  margin-top: 70px;
+  width: 400px;
 }
 
 .pay_btn {
-  color: white;
   background-color: black;
+  color: white;
   font-family: "poppins", sans-serif;
   font-size: xx-large;
   transition: 0.3s;

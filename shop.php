@@ -4,12 +4,12 @@
 
 <div class="container">
     <div class="section">
-        <a href="homeSterio.php"><img src="img/homeshop.png" alt="unable to load image"></a>
+        <a href="homeSterio.php" class="link"><img src="img/homeshop.png" alt="unable to load image"></a>
         <br>
         Shop Home
     </div>
     <div class="section">
-        <a href="carSterio.php"><img src="img/carshop.png" alt="unable to load image"></a>
+        <a href="carSterio.php" class="link"><img src="img/carshop.png" alt="unable to load image"></a>
         <br>
         Shop Car
     </div>

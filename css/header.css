@@ -7,16 +7,16 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 
 .navbar {
+  align-items: center;
+  background-color: #000000;
   color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: #000000;
 }
 
 .logo a {
@@ -33,11 +33,11 @@ a {
 }
 
 .nav-bar-items li {
+  display: block;
   font-family: "poppins", sans-serif;
   font-size: 1.5rem;
   list-style: none;
   padding: 1rem;
-  display: block;
   transition: 0.3s;
 }
 
@@ -47,21 +47,21 @@ a {
 }
 
 .toggle-button {
-  position: absolute;
-  top: 0.75rem;
-  right: 1rem;
   display: none;
   flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
   height: 21px;
+  justify-content: space-between;
+  position: absolute;
+  right: 1rem;
+  top: 0.75rem;
+  width: 30px;
 }
 
 .toggle-button .bar {
-  height: 3px;
-  width: 100%;
   background-color: white;
   border-radius: 10px;
+  height: 3px;
+  width: 100%;
 }
 
 @media (max-width: 1000px) {
@@ -75,13 +75,13 @@ a {
   }
 
   .navbar {
-    flex-direction: column;
     align-items: flex-start;
+    flex-direction: column;
   }
 
   .nav-bar-items ul {
-    width: 100%;
     flex-direction: column;
+    width: 100%;
   }
 
   .nav-bar-items li {
